@@ -32,13 +32,13 @@ def email_verification(receiver_email):
     return receiver_email
 
 valid_receiver_email = email_verification(receiver_email)
-password = "stqqwjqoocucknsx"
-server.login("sharmatushika53@gmail.com",password)
+password = "lhxj qbox votb mamu"
+server.login("sharmatushika6@gmail.com",password)
 
 body = "dear"+name+","+"\n"+"\n"+"your OTP is "+str(OTP)+"."
 subject = "OTP verification using python"
 message = f'subject:{subject}\n\n{body}'
-server.sendmail("sharmatushika53@gmail.com",valid_receiver_email,message)
+server.sendmail("sharmatushika6@gmail.com",valid_receiver_email,message)
 
 def sending_otp(receiver_email):
     new_otp = random.randint(100000,999999)
@@ -46,7 +46,7 @@ def sending_otp(receiver_email):
     body = "dear"+name+","+"\n"+"\n"+"your OTP is "+str(new_otp)+"."
     subject = "OTP verification using python" 
     message = f'subject:{subject}\n\n{body}'
-    server.sendmail("sharmatushika53@gmail.com",receiver_email,message)
+    server.sendmail("sharmatushika6@gmail.com",receiver_email,message)
     print("OTP has been sent to"+receiver_email)
     received_OTP = int(input("enter OTP:"))
 
